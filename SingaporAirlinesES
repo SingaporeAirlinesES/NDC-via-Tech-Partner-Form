@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singapore Airlines NDC - Formulario de Solicitud</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --sia-navy: #003087;
+            --sia-gold: #D4AF37;
+            --sia-light-blue: #E8F2F7;
+            --sia-dark: #001F3F;
+            --text-primary: #2C3E50;
+            --text-secondary: #5A6C7D;
+            --border-color: #E0E6ED;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #F8FBFD 0%, #E8F2F7 100%);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(0, 48, 135, 0.08);
+            overflow: hidden;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--sia-navy) 0%, var(--sia-dark) 100%);
+            padding: 50px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content { position: relative; z-index: 1; }
+
+        .logo-placeholder {
+            width: 180px; height: 60px;
+            background: var(--white);
+            border-radius: 8px;
+            margin-bottom: 24px;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 600; color: var(--sia-navy);
+            font-size: 14px;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 36px; font-weight: 300;
+            color: var(--white); margin-bottom: 12px;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 15px; font-weight: 300;
+            max-width: 700px;
+        }
+
+        .form-content { padding: 50px 40px; }
+
+        .section { margin-bottom: 50px; }
+
+        .section-header {
+            display: flex; align-items: center;
+            margin-bottom: 32px
